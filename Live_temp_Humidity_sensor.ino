@@ -1,8 +1,8 @@
 #include <dht.h>
-#define DHT11_PIN 7
+#define DHT11_PIN 3
 dht DHT;
 
-int sensorPin = 4; // select the input pin for LDR
+int sensorPin = 2; // select the input pin for LDR
 int sensorValue = 0; // Variable to store the value coming from the sensor
 
 void setup() {
