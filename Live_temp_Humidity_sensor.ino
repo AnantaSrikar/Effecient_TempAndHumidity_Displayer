@@ -10,6 +10,7 @@ void setup() {
   Serial.begin(9600);
   switchOffBuiltInLED();
   pinMode(voltagePin, OUTPUT);
+  startCode();
 }
 
 void loop() {
@@ -54,4 +55,8 @@ void giveTempAndHumidityValues(dht DHT){
   Serial.print(DHT.humidity);
   Serial.print("\n\n");
   
+}
+
+void startCode(){
+  Serial.print("The program is up successfully");
 }
