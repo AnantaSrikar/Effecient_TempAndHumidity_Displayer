@@ -6,7 +6,7 @@ dht DHT;
 LiquidCrystal lcd(7, 8, 9, 10, 11, 12); // the necessary pins for LCD to work
 
 const int sensorPin = 2; // Input pin for LDR
-const int sensorValue = 0; // Variable to store the value coming from the LDR
+int sensorValue = 0; // Variable to store the value coming from the LDR
 const int voltagePin = 4; // pin to control the power supply to the Humidity and Temp sensor
 
 void setup() {
@@ -47,7 +47,7 @@ bool isLightOn(){
 }
 
 void giveTempAndHumidityValues(dht DHT){
-  //print Out temp and humidity for now, as I don't have the LCD display
+  
   DHT.read11(DHT11_PIN);
   digitalWrite(voltagePin, HIGH); //This is IMP
   lcd.clear(); //Clearing previous display
