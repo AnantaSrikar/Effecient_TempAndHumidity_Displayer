@@ -14,7 +14,7 @@ void setup() {
   switchOffBuiltInLED();
   pinMode(voltagePin, OUTPUT);
   digitalWrite(voltagePin, HIGH);
-  //lcd.begin(16,2);
+  lcd.begin(16,2);
 }
 
 void loop() {
@@ -50,9 +50,9 @@ void giveTempAndHumidityValues(dht DHT){
   DHT.read11(DHT11_PIN);
   digitalWrite(voltagePin, HIGH); //Ths is IMP
   Serial.println("Temp : " + String(DHT.temperature) + " C\nHumidity : " + String(DHT.humidity) + "%\n\n");
-  /*lcd.clear(); //Clearing previous display
+  lcd.clear(); //Clearing previous display
   lcd.setCursor(0,0);
-  lcd.print("Temp = " + String(DHT.temperature) + " `C");
+  lcd.print("Temp = " + String(DHT.temperature) + " C");
   lcd.setCursor(0,1);
-  lcd.print("Humidity=" + String(DHT.humidity) + "%");*/
+  lcd.print("Humidity=" + String(DHT.humidity) + "%");
 }
