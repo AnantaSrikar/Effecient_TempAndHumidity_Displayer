@@ -8,4 +8,8 @@ Basically, the sensors work and show the values only when there's enough light f
 * A LCD display (still have to buy one yet, so stay tuned)
 
 ## Connections
-I shall give the connetions in detail once I buy a LCD display and finish the project
+* LCD : [From Arduino's](https://www.arduino.cc/en/Tutorial/HelloWorld) official page
+* LDR Module : 3.3V power supply, GND, Data pin to D7
+* DHT module : Vcc to D8, GND, Data pin to D6
+
+The project should work as expected
