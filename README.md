@@ -1,6 +1,6 @@
 # Power Efficient Temperature and Humidity Displayer
 ## Project Description
-After a lot of messing around with the LCD, I figured out that the LCD backlight consumes the most power in the whole circuit. Turning off sensors don't really matter. Hence, the backlight of the LCD turns on only when there's not enough light in the surroundings, thus making it truely power efficient
+After a lot of messing around with the LCD, I figured out that the LCD backlight consumes the most power in the whole circuit. Turning off sensors don't really matter. Hence, the backlight of the LCD turns on only when there's not enough light in the surroundings, thus making it truly power efficient.
 
 ## Requirements
 * Arduino (I used an Nano here)
